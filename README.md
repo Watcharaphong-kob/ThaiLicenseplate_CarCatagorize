@@ -20,7 +20,7 @@ In this program, we've chosen to separate it into three distinct pieces of code.
 ## License plate Detection
 We applied the cv2 library for license plate recognition. The key is to utilize contours to select the license plate and determine its position. Subsequently, we employ perspective transformation to resize it to the correct plate dimensions. You can gain a clearer understanding of this process by viewing the explanation provided in the attached clip below.
 > [!IMPORTANT]
->   - [Video source (Download then play)](https://kmitlthailand-my.sharepoint.com/:v:/g/personal/65110135_kmitl_ac_th/EaSTJdwvu79CqNLPraNsa4ABGQ680T0gi8Nvd4VTRbiVPw?e=XLhvCm(url))
+>   - [Video source (Create folder "Clips" and place in it)](https://kmitlthailand-my.sharepoint.com/:v:/g/personal/65110135_kmitl_ac_th/EaSTJdwvu79CqNLPraNsa4ABGQ680T0gi8Nvd4VTRbiVPw?e=XLhvCm(url))
 >   - [Video process](https://www.youtube.com/watch?v=JHHD-xioxbU(url))
 >   - [Code explaination](https://www.youtube.com/watch?v=EIdgbmkKViU(url))
 ## Character Segmentation
