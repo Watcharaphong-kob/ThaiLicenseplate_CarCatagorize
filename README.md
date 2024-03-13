@@ -1,17 +1,16 @@
 # License Plate initial Character Analysis for Vehicle Categorization
 ## License Plate Recognition
 We applied the cv2 for license plate recognition. The key is to use the contour to select the license plate and its position then pick it out by using perspective transformation to transform it to the correct plate size.
-We add the cropping images to determine the region of interest, the filters for adjusting the video to control the noise and edge detection, and the threshold for the contour.
-By appropriately adjusting values for threshold, kernels, and classification criteria, we can locate the license plates on the cars even if moving. The located license plates will be extracted and collected in a folder for the next process.
-![Screenshot 2024-03-13 170111](https://github.com/Watcharaphong-kob/ThaiLicenseplate_CarCatagorize/assets/81470950/a705a9b0-28ca-4f62-95cb-5449993ac3b5)
+We add the cropping images to determine the region of interest, the filters for adjusting the video to control the noise and edge detection, and the threshold for the contour. By appropriately adjusting values for threshold, kernels, and classification criteria, we can locate the license plates on the cars even if moving. The located license plates will be extracted and collected in a folder for the next process.
+          ![Screenshot 2024-03-13 170111](https://github.com/Watcharaphong-kob/ThaiLicenseplate_CarCatagorize/assets/81470950/a705a9b0-28ca-4f62-95cb-5449993ac3b5)
 ## Character Segmentation
   We utilize the EasyOCR library for character segmentation, a crucial step in text extraction from images. Utilizing deep learning models, such as convolutional neural networks (CNNs) and  recurrent neural networks (RNNs), EasyOCR processes images containing Thai text to detect individual characters. The library segments characters, identifies boundaries, and recognizes specific characters. 
 In the context of car license plate images captured from recognition systems, EasyOCR accurately analyzes and extracts Thai text and numbers from license plates.
-![Screenshot 2024-03-13 171325](https://github.com/Watcharaphong-kob/ThaiLicenseplate_CarCatagorize/assets/81470950/983068b9-6a89-4879-a818-e9a241c68721)
+          ![Screenshot 2024-03-13 171325](https://github.com/Watcharaphong-kob/ThaiLicenseplate_CarCatagorize/assets/81470950/983068b9-6a89-4879-a818-e9a241c68721)
 ## Vehicle Categorization
 Vehicle categorization is the practice of classifying cars into various groups. In this context, we use data from initial character in license plates to classify vehicles. The method involves checking several characteristics on the license plates, such as the existence of specified symbols, numerals, or Thai language letters. 
 This classification procedure can be beneficial for a variety of applications, including traffic management, automobile registration, and market research. Finally, it gives an organized approach to understanding and categorizing the many types of cars on the road. 
-![Screenshot 2024-03-13 171230](https://github.com/Watcharaphong-kob/ThaiLicenseplate_CarCatagorize/assets/81470950/e80bdfa0-1e00-4a01-b92d-9fb84e17d34a)
+          ![Screenshot 2024-03-13 171230](https://github.com/Watcharaphong-kob/ThaiLicenseplate_CarCatagorize/assets/81470950/e80bdfa0-1e00-4a01-b92d-9fb84e17d34a)
 # How to use this program
 In this program, we've chosen to separate it into three distinct pieces of code. This decision was made because when attempting to combine them, the system experienced significant slowdowns and generated numerous errors within the program.
 ## License plate Detection
